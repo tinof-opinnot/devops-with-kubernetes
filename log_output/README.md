@@ -38,4 +38,6 @@ kubectl logs -f deployment/log-output-dep
 
 `manifests/service.yaml` is a ClusterIP Service and `manifests/ingress.yaml` routes `/` to it. Open http://localhost:8081 to see the status.
 
+The same Ingress routes `/pingpong` to the [ping-pong app](../ping_pong/), so deploy that app too.
+
 To use a new version, build the image with a new tag, import it, change the tag in `manifests/deployment.yaml` and apply again.
