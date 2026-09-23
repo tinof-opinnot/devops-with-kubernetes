@@ -22,6 +22,8 @@ k3d image import log-output:1.1
 ## Deploy
 
 ```sh
-kubectl create deployment log-output-dep --image=log-output:1.1
+kubectl apply -f manifests/deployment.yaml
 kubectl logs -f deployment/log-output-dep
 ```
+
+To use a new version, build the image with a new tag, import it, change the tag in `manifests/deployment.yaml` and apply again.
