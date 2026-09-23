@@ -1,7 +1,7 @@
 {
   "name": "log-output",
   "version": "1.0.0",
-  "description": "Prints a random string generated on startup every 5 seconds",
+  "description": "Prints a random string generated on startup every 5 seconds and serves it over HTTP",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
