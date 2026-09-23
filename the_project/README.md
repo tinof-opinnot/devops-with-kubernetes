@@ -18,8 +18,10 @@ k3d image import todo-app:1.2
 ## Deploy
 
 ```sh
-kubectl create deployment todo-app-dep --image=todo-app:1.2
+kubectl apply -f manifests/deployment.yaml
 kubectl logs -f deployment/todo-app-dep
 ```
+
+The port is set with the `PORT` environment variable in `manifests/deployment.yaml`.
 
 The port is not reachable from outside the cluster yet. Networking comes later in the course.
