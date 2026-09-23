@@ -9,3 +9,4 @@ Every exercise has a GitHub release. The release tag is the exercise number.
 ### Chapter 2
 
 - [1.1.](https://github.com/tinof-opinnot/devops-with-kubernetes/tree/1.1/log_output)
+- [1.2.](https://github.com/tinof-opinnot/devops-with-kubernetes/tree/1.2/the_project)
