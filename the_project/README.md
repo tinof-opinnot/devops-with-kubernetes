@@ -17,7 +17,7 @@ k3d image import todo-app:1.5
 
 ## Create the cluster
 
-The cluster must map host ports into the cluster:
+The cluster must map host port `8081` to the k3d load balancer:
 
 ```sh
 k3d cluster create --port 8082:30080@agent:0 -p 8081:80@loadbalancer --agents 2
@@ -34,4 +34,10 @@ The port is set with the `PORT` environment variable in `manifests/deployment.ya
 
 ## Open it in a browser
 
-`manifests/service.yaml` is a NodePort Service on node port `30080`. k3d maps host port `8082` to it, so open http://localhost:8082.
+`manifests/service.yaml` is a ClusterIP Service and `manifests/ingress.yaml` routes `/` to it. Open http://localhost:8081.
+
+The Log output Ingress also routes `/`. Delete it from the cluster before you deploy this one, so the two don't conflict:
+
+```sh
+kubectl delete -f ../log_output/manifests/ingress.yaml
+```

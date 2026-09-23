@@ -15,3 +15,4 @@ Every exercise has a GitHub release. The release tag is the exercise number.
 - [1.5.](https://github.com/tinof-opinnot/devops-with-kubernetes/tree/1.5/the_project)
 - [1.6.](https://github.com/tinof-opinnot/devops-with-kubernetes/tree/1.6/the_project)
 - [1.7.](https://github.com/tinof-opinnot/devops-with-kubernetes/tree/1.7/log_output)
+- [1.8.](https://github.com/tinof-opinnot/devops-with-kubernetes/tree/1.8/the_project)
