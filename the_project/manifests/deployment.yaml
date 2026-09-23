@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: todo-app
-          image: todo-app:1.2
+          image: todo-app:1.5
           # The image is imported with `k3d image import`, not pulled from a registry
           imagePullPolicy: IfNotPresent
           env:
